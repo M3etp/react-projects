@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter:wght@400;600;700&display=swap');
+
+
+*, body {
+  margin: 0;
+  padding: 0;
+  font-family: Agbalumo, sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, #B15EFF ,#3D30A2);
+}
