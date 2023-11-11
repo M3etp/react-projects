@@ -1,15 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './App.css'
 import Dashboard from './pages/Dashboard/Dashboard'
+import TransactionPage from "./pages/Transaction/TransactionPage";
+import Support from "./pages/Support/Support";
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Dashboard />,
+    },
+    {
+      path: "/transaction",
+      element: <TransactionPage />,
+    },
+    {
+      path: "/support",
+      element: <Support />,
+    },
+  ]);
 
   return (
     <>
-     <Dashboard />
+     <RouterProvider router={router} />
+    
     </>
   )
 }

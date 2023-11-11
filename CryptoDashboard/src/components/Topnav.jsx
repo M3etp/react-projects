@@ -6,7 +6,7 @@ import {FaBars} from 'react-icons/fa'
 
 function Topnav({title, onOpen}) {
   return (
-    <Box px={4}>
+    <Box px={4} background={"white"}>
       <HStack mx={"auto"} maxW={"60rem"}  height={16} justifyContent={"space-between"}>
         <Icon as={FaBars} display={{base: 'block', lg: 'none'}}  onClick={onOpen}/>
         <Heading fontSize={"28px"}>{title}</Heading>

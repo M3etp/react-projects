@@ -1,8 +1,12 @@
 import React from 'react'
+import DashboardLayout from '../../components/DashboardLayout'
+import { Card } from '@chakra-ui/react'
 
 function Support() {
   return (
-    <div>Support</div>
+    <DashboardLayout>
+      <Card>Support</Card>
+    </DashboardLayout>
   )
 }
 
